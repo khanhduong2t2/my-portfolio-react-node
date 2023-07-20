@@ -195,3 +195,95 @@ header {
   transition: 0.5s linear;
 }
 /*-------------------------HEADER END----------------------------*/
+
+/* FOOTER */
+footer {
+  width: 100%;
+  padding-bottom: 5%;
+  background-color: #162a35;
+}
+.footerContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.footerLogo {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.footerLogo img {
+  width: 70%;
+  height: 100px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.footerNav,
+.footerMedias {
+  width: 27%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 2%;
+}
+.footerNav p a {
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.footerMedias {
+  width: 17%;
+  margin-bottom: 3%;
+}
+.footerMedia {
+  width: 40px;
+  height: 40px;
+  background-color: blanchedalmond;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.footerMedia a {
+  color: rgb(22, 22, 22);
+}
+.footerContainer span {
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+}
+/*-------------------------FOOTER END----------------------------*/
