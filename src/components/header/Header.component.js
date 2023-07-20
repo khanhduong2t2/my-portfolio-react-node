@@ -5,7 +5,11 @@ function Header() {
         <header>
             <div className="container">
                 <div className="nav">
-                    <div className="nav1"></div>
+                    <div className="nav1">
+                        <a href="#home">
+                            <img src="images/logo-home.jpg" alt="Logo" />
+                        </a>
+                    </div>
                     <div className="nav2">
                         <div className="menu"><a href="#about">ABOUT ME</a></div>
                         <div className="menu"><a href="#portfolio">PORTFOLIO</a></div>
