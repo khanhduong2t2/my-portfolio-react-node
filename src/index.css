@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,600,700|Poppins:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  font-family: "Josefin Sans", sans-serif;
+}
+body a,
+body button {
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+body a:hover {
+  text-decoration: none;
+  color: unset;
+}
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+.container {
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.rows {
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+main {
+  flex-grow: 1;
+}
+.alert {
+  padding: 1rem;
+  border: 0.5rem solid transparent;
+  border-radius: 0.5rem;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.alert-info {
+  color: #2020a0;
+  background-color: #ebebeb;
+  text-align: center;
+}
+.alert-success {
+  color: #549400;
+  background-color: #eaf5eb;
+  text-align: center;
+}
+.alert-danger {
+  color: rgb(165, 14, 14);
+  background-color: #f3e6e6;
+  text-align: center;
+}
+.hrizontalLine {
+  width: 40%;
+  height: 3px;
+  background-color: #046fc7;
+  margin-top: 6%;
+}
+.diff {
+  width: 50%;
+  background-color: orange;
+}
+/*--------------------------HEADER-------------------------------*/
+header {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.header-white {
+  background-color: white;
+}
+.header-black {
+  background-color: #001517;
+}
+.header-black .menu a {
+  color: white;
+}
+.nav {
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav2 {
+  width: 40%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+}
+.menu {
+  width: 20%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+}
+.nav1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 25%;
+}
+.nav1 a img {
+  width: 20%;
+  height: 50px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.menu a {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+}
+.menu:hover a {
+  color: orange;
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+/*-------------------------HEADER END----------------------------*/
