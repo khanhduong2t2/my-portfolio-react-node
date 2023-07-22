@@ -1,20 +1,23 @@
 import React from 'react'
+import { HashLink } from 'react-router-hash-link'
+import { Link } from 'react-router-dom'
 
-function Header() {
+function Header(props) {
     return (
-        <header>
+        <header className={`header-${props.bgColor || "white"}`}>
             <div className="container container-header">
                 <div className="nav">
                     <div className="nav1">
-                        <a href="#home">
-                            <img src="images/logo-home.jpg" alt="Logo" />
-                        </a>
+                        <Link to="/">
+                            <img src={`images/logo-home-${props.bgColor || "white"}.jpg`} alt="Logo" />
+                            {/* <img src="images/logo-home-black.jpg" alt="Logo" /> */}
+                        </Link>
                     </div>
                     <div className="nav2">
-                        <div className="menu"><a href="#about">ABOUT ME</a></div>
-                        <div className="menu"><a href="#portfolio">PORTFOLIO</a></div>
-                        <div className="menu"><a href="#blogs">BLOGS</a></div>
-                        <div className="menu"><a href="#contact">CONTACT ME</a></div>
+                        <div className={`menu w-${props.bgColor || "white"}`}><Link to="/my-cv">MY CV</Link></div>
+                        <div className={`menu w-${props.bgColor || "white"}`}><Link to="/blogs">BLOGS</Link></div>
+                        <div className={`menu w-${props.bgColor || "white"}`}><HashLink to="/#about">ABOUT ME</HashLink></div>
+                        <div className={`menu w-${props.bgColor || "white"}`}><HashLink to="/#contact">CONTACT ME</HashLink></div>
                     </div>
                 </div>
             </div>

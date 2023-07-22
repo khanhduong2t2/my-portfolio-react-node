@@ -14,7 +14,7 @@ function HomeScreen() {
                                     <div className="col-lg-4 col-md-4 col-sm-6">
                                         <div className="sectionBox">
                                             <div className="sectionImage">
-                                                <i class="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
+                                                <i className="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
                                             </div>
                                             <div className="sectionWords">
                                                 <h4>Web Development</h4>
@@ -28,7 +28,7 @@ function HomeScreen() {
                                     <div className="col-lg-4 col-md-4 col-sm-6">
                                         <div className="sectionBox">
                                             <div className="sectionImage">
-                                                <i class="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
+                                                <i className="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
                                             </div>
                                             <div className="sectionWords">
                                                 <h4>Mobile Development</h4>
@@ -42,7 +42,7 @@ function HomeScreen() {
                                     <div className="col-lg-4 col-md-4 col-sm-6">
                                         <div className="sectionBox">
                                             <div className="sectionImage">
-                                                <i class="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
+                                                <i className="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
                                             </div>
                                             <div className="sectionWords">
                                                 <h4>PWA development</h4>
@@ -56,7 +56,7 @@ function HomeScreen() {
                                     <div className="col-lg-4 col-md-4 col-sm-6">
                                         <div className="sectionBox">
                                             <div className="sectionImage">
-                                                <i class="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
+                                                <i className="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
                                             </div>
                                             <div className="sectionWords">
                                                 <h4>Cross-Platform App</h4>
@@ -70,7 +70,7 @@ function HomeScreen() {
                                     <div className="col-lg-4 col-md-4 col-sm-6">
                                         <div className="sectionBox">
                                             <div className="sectionImage">
-                                                <i class="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
+                                                <i className="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
                                             </div>
                                             <div className="sectionWords">
                                                 <h4>UX/UI Designs</h4>
@@ -84,7 +84,7 @@ function HomeScreen() {
                                     <div className="col-lg-4 col-md-4 col-sm-6">
                                         <div className="sectionBox">
                                             <div className="sectionImage">
-                                                <i class="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
+                                                <i className="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
                                             </div>
                                             <div className="sectionWords">
                                                 <h4>Digital Marketing</h4>
@@ -106,7 +106,7 @@ function HomeScreen() {
                                     <div className="col-lg-4 col-md-4 col-sm-6">
                                         <div className="sectionBox">
                                             <div className="sectionImage">
-                                                <i class="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
+                                                <i className="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
                                             </div>
                                             <div className="sectionWords">
                                                 <h4>Mobile Development</h4>
@@ -123,7 +123,7 @@ function HomeScreen() {
                                     <div className="col-lg-4 col-md-4 col-sm-6">
                                         <div className="sectionBox">
                                             <div className="sectionImage">
-                                                <i class="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
+                                                <i className="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
                                             </div>
                                             <div className="sectionWords">
                                                 <h4>UX/UI Designs</h4>
@@ -140,7 +140,7 @@ function HomeScreen() {
                                     <div className="col-lg-4 col-md-4 col-sm-6">
                                         <div className="sectionBox">
                                             <div className="sectionImage">
-                                                <i class="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
+                                                <i className="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
                                             </div>
                                             <div className="sectionWords">
                                                 <h4>Web Development</h4>
@@ -157,7 +157,7 @@ function HomeScreen() {
                                     <div className="col-lg-4 col-md-4 col-sm-6">
                                         <div className="sectionBox">
                                             <div className="sectionImage">
-                                                <i class="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
+                                                <i className="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
                                             </div>
                                             <div className="sectionWords">
                                                 <h4>E-commerce</h4>
@@ -173,7 +173,7 @@ function HomeScreen() {
                                     <div className="col-lg-4 col-md-4 col-sm-6">
                                         <div className="sectionBox">
                                             <div className="sectionImage">
-                                                <i class="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
+                                                <i className="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
                                             </div>
                                             <div className="sectionWords">
                                                 <h4>Server Side</h4>
@@ -197,7 +197,7 @@ function HomeScreen() {
                                     <div className="col-lg-4 col-md-4 col-sm-6">
                                         <div className="sectionBox">
                                             <div className="sectionImage">
-                                                <i class="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
+                                                <i className="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
                                             </div>
                                             <div className="sectionWords">
                                                 <h4>Construction</h4>
@@ -211,7 +211,7 @@ function HomeScreen() {
                                     <div className="col-lg-4 col-md-4 col-sm-6">
                                         <div className="sectionBox">
                                             <div className="sectionImage">
-                                                <i class="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
+                                                <i className="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
                                             </div>
                                             <div className="sectionWords">
                                                 <h4>Healthcare</h4>
@@ -225,7 +225,7 @@ function HomeScreen() {
                                     <div className="col-lg-4 col-md-4 col-sm-6">
                                         <div className="sectionBox">
                                             <div className="sectionImage">
-                                                <i class="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
+                                                <i className="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
                                             </div>
                                             <div className="sectionWords">
                                                 <h4>Retail & ECommerce</h4>
@@ -238,7 +238,7 @@ function HomeScreen() {
                                     <div className="col-lg-4 col-md-4 col-sm-6">
                                         <div className="sectionBox">
                                             <div className="sectionImage">
-                                                <i class="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
+                                                <i className="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
                                             </div>
                                             <div className="sectionWords">
                                                 <h4>FinTech</h4>
@@ -252,7 +252,7 @@ function HomeScreen() {
                                     <div className="col-lg-4 col-md-4 col-sm-6">
                                         <div className="sectionBox">
                                             <div className="sectionImage">
-                                                <i class="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
+                                                <i className="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
                                             </div>
                                             <div className="sectionWords">
                                                 <h4>Travel & Hospitality</h4>
@@ -266,7 +266,7 @@ function HomeScreen() {
                                     <div className="col-lg-4 col-md-4 col-sm-6">
                                         <div className="sectionBox">
                                             <div className="sectionImage">
-                                                <i class="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
+                                                <i className="fa-solid fa-computer" style={{ fontSize: "40px" }}></i>
                                             </div>
                                             <div className="sectionWords">
                                                 <h4>Logistics</h4>

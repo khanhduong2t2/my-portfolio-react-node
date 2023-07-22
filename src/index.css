@@ -116,7 +116,7 @@ main {
 /*--------------------------HEADER-------------------------------*/
 .container-header {
   min-width: 100%;
-  background-color: #162a35;
+  /* background-color: #162a35; */
 }
 header {
   /* padding-top: 1%; */
@@ -126,11 +126,15 @@ header {
   background-color: white;
 }
 .header-black {
-  background-color: #001517;
+  background-color: #162a35;
 }
-.header-black .menu a {
+.header-white .w-white a {
+  color: #162a35;
+}
+.header-black .w-black a {
   color: white;
 }
+
 .nav {
   width: 100%;
   -webkit-box-pack: justify;
@@ -189,7 +193,9 @@ header {
 }
 .menu a {
   font-size: 15px;
-  color: rgb(255, 255, 255);
+  height: 100%;
+  line-height: 50px;
+  width: 100%;
   text-transform: capitalize;
 }
 .menu:hover a {
@@ -487,6 +493,7 @@ svg {
 }
 /* SCREEN */
 .screenWords {
+  text-align: justify;
   width: 100%;
   padding-top: 20%;
 }
@@ -519,6 +526,14 @@ svg {
   color: white;
   font-weight: 300;
 }
+
+.buttonMain a:hover {
+  color: orange;
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
 .screenImage {
   width: 100%;
 }
@@ -528,4 +543,173 @@ svg {
   -o-object-fit: contain;
   object-fit: contain;
 }
+/* Image Container */
+.container-2 {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.img1 {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: red;
+  height: auto !important;
+  top: 32px;
+  left: -40px;
+  transform: rotate(-15deg);
+}
+.img2 {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  top: 17px;
+  left: 428px;
+  transform: rotate(24deg);
+}
+.img3 {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  background-color: red;
+  height: auto !important;
+  top: 8px;
+  left: 206px;
+  transform: rotate(0deg);
+}
 /* -------------------------BANNER END-------------------------- */
+
+/*---------------------------ABOUT US----------------------------*/
+#about {
+  width: 100%;
+  padding-top: 9%;
+  padding-bottom: 5%;
+}
+.aboutMeImg {
+  width: 90%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.aboutMeImg img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.about-me {
+  text-align: justify;
+}
+.about-me h5 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+}
+.aboutHorizontalLine {
+  width: 60px;
+  height: 3px;
+  background-color: #e49504;
+  border: 0;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.about-me p {
+  font-size: 18px;
+  margin-top: 3%;
+  line-height: 30px;
+  font-weight: 300;
+}
+/*--------------------------ABOUT US END-------------------------------*/
+
+/*--------------------------CONTACT ME-----------------------------*/
+.contactme {
+  width: 100%;
+  background-image: url("http://www.mmasynergy.com/images/inner-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 5%;
+}
+.contactOverlay {
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-color: rgba(0, 0, 0, 0.921);
+}
+.form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+form {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 20px;
+}
+form button {
+  width: 190px;
+  height: 55px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #001517;
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.5s linear;
+  color: white;
+  font-weight: bold;
+  margin-top: 20%;
+}
+form button:hover {
+  background-color: unset;
+  border: 2px solid #e49504;
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.5s linear;
+  color: black;
+}
+.formWord {
+  width: 40%;
+  padding: 4%;
+}
+.formWord h2 {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 10%;
+}
+.formWord input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10%;
+  border: 0;
+  margin-top: 2%;
+  padding-left: 3%;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+  box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+}
+.formWord textarea {
+  width: 100%;
+  margin-bottom: -12%;
+  border: 0;
+  margin-top: 9%;
+  height: 59%;
+  color: black;
+  box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+  padding-left: 3%;
+}
+/*--------------------------CONTACT ME END-------------------------------*/
