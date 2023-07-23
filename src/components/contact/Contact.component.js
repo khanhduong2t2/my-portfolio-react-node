@@ -1,17 +1,36 @@
-import React from 'react'
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+
+const Results = () => {
+    return (
+        <p>Your message has been sent. I will contact you soon !</p>
+    )
+}
 
 function Contact() {
+    const [result, showResult] = useState(false);
+    const form = useRef();
 
-    const submitForm = () => {
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-    }
+        emailjs.sendForm(process.env.REACT_APP_Email_Service_Id, process.env.REACT_APP_Email_Template_Id, form.current, process.env.REACT_APP_Email_Public_Key)
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
+        e.target.reset();
+        showResult(true);
+    };
 
     return (
         <div className="contactme" id="contact">
             <div className="contactOverlay">
                 <div className="container">
                     <div className="form">
-                        <form action="" onSubmit={submitForm}>
+                        <form ref={form} onSubmit={sendEmail}>
                             <div className="formWord">
                                 <h2>Say Hello!</h2>
                                 <span>Full Name</span>
@@ -34,7 +53,7 @@ function Contact() {
                                 <br />
                                 <button>SUBMIT</button>
 
-                                {/* <div className="row">{showResults ? <Results /> : null}</div> */}
+                                <div className="row">{result ? <Results /> : null}</div>
                             </div>
                         </form>
                     </div>
