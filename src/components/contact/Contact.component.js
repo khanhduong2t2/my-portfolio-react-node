@@ -25,6 +25,10 @@ function Contact() {
         showResult(true);
     };
 
+    setTimeout(() => {
+        showResult(false);
+    }, 3000);
+
     return (
         <div className="contactme" id="contact">
             <div className="contactOverlay">
