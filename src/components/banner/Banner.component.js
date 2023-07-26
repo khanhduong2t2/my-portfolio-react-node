@@ -1,7 +1,19 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+// import axios from 'axios';
+// import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { listApps } from '../../Redux/actions/appActions';
 
 function Banner() {
+    const appLists = useSelector((state) => state.appLists);
+    const { loading, error, apps } = appLists;
+
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(listApps());
+    }, [dispatch]);
+
     return (
         <div className="Mainbackground" id="home">
             <div className="topBackground"></div>
@@ -17,13 +29,31 @@ function Banner() {
                 <div className="row">
                     <div className="col-md-12 col-lg-6">
                         <div className="screenWords">
-                            <h1>Hello, I'm Duong.</h1>
+                            {/* <h1>Hello, I'm Duong.</h1>
                             <p>
                                 A full-stack developer. Specializing in building exceptional
                                 trending mobile applications and websites. Feel free to take a
                                 look at my latest projects. Remotely available UTC−1 to UTC+8.
                                 project@irenemmassy.com Tel:+255 065 535 2744
-                            </p>
+                            </p> */}
+                            {
+                                loading ? (
+                                    <div>
+                                        <h1>...</h1>
+                                    </div>
+                                )
+                                    : error ? <h1>!!!</h1>
+                                        : (
+                                            apps.data.data.map((item) => (
+                                                <div key={item._id}>
+                                                    <h1>{item.title}</h1>
+                                                    <p>{item.content}</p>
+                                                </div>
+                                            ))
+                                            // <h1>222</h1>
+                                        )
+                            }
+
                             <div className="twoMainButton">
                                 <div className="buttonMain">
                                     <Link to="/app" href="abc">Mobile Apps</Link>

@@ -30,7 +30,7 @@ function Contact() {
     }, 3000);
 
     return (
-        <div className="contactme" id="contact">
+        <div className="contact_me" id="contact">
             <div className="contactOverlay">
                 <div className="container">
                     <div className="form">

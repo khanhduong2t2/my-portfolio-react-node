@@ -4,8 +4,8 @@ import Header from '../components/header/Header.component'
 function AppPage() {
     return (
         <>
-            <Header></Header>
-            <div className="banner">
+            <Header bgColor="white"></Header>
+            {/* <div className="banner">
                 <div className="overlay">
                     <div className="container">
                         <h1>My Recent Mobile Apps</h1>
@@ -39,7 +39,7 @@ function AppPage() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

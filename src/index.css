@@ -116,12 +116,8 @@ main {
 /*--------------------------HEADER-------------------------------*/
 .container-header {
   min-width: 100%;
-  /* background-color: #162a35; */
 }
-header {
-  /* padding-top: 1%; */
-  /* padding-bottom: 1%; */
-}
+
 .header-white {
   background-color: white;
 }
@@ -174,6 +170,7 @@ header {
   display: flex;
   height: 50px;
 }
+
 .nav1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -191,15 +188,15 @@ header {
   -o-object-fit: contain;
   object-fit: contain;
 }
-.menu a {
+.header .menu a {
   font-size: 15px;
   height: 100%;
   line-height: 50px;
   width: 100%;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 .menu:hover a {
-  color: orange;
+  color: rgb(255, 183, 0) !important;
   -webkit-transition: 0.5s linear;
   -o-transition: 0.5s linear;
   transition: 0.5s linear;
@@ -264,9 +261,9 @@ footer {
   align-items: center;
   margin-top: 2%;
 }
-.footerNav p a {
+
+.footerNav .menu a {
   font-size: 12px;
-  color: rgb(255, 255, 255);
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -298,9 +295,7 @@ footer {
 }
 /*-------------------------FOOTER END----------------------------*/
 
-/*---------------------------------------------------------*/
-/* EXPERIANCE                                */
-/*---------------------------------------------------------*/
+/*--------------------------EXPERIENCE-------------------------------*/
 .section {
   width: 100%;
   padding-top: 10%;
@@ -446,9 +441,7 @@ a.nav-item.nav-link.active {
   font-family: "Josefin Sans", sans-serif;
 }
 
-/*---------------------------------------------------------*/
-/* EXPERIANCE  END                                */
-/*---------------------------------------------------------*/
+/*----------------------EXPERIENCE  END-----------------------------------*/
 
 /* -------------------------BANNER-------------------------- */
 .Mainbackground {
@@ -622,7 +615,7 @@ svg {
 /*--------------------------ABOUT US END-------------------------------*/
 
 /*--------------------------CONTACT ME-----------------------------*/
-.contactme {
+.contact_me {
   width: 100%;
   background-image: url("http://www.mmasynergy.com/images/inner-banner.jpg");
   background-position: center;
