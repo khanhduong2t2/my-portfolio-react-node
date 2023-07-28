@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
+import LogoHomeBlack from "../../assets/images/logo-home-black.jpg"
 
 import Menu from './Menu.component';
 
@@ -10,11 +11,12 @@ function Header(props) {
                 <div className="nav">
                     <div className="nav1">
                         <Link to="/">
-                            <img src={`images/logo-home-${props.bgColor || "white"}.jpg`} alt="Logo" />
+                            {/* <img src={`./images/logo-home-${props.bgColor || "white"}.jpg`} alt="Logo" /> */}
+                            <img src={LogoHomeBlack} alt="Logo" />
                         </Link>
                     </div>
                     <div className="nav2">
-                        <Menu></Menu>
+                        <Menu bgColor={props.bgColor}></Menu>
                     </div>
                 </div>
             </div>

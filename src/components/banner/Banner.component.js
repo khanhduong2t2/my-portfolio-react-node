@@ -1,9 +1,9 @@
-// import axios from 'axios';
-// import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { listApps } from '../../Redux/actions/appActions';
+import { listContents } from '../../Redux/actions/appActions';
+
+import ImageBanner from './ImageBanner.component';
 
 function Banner() {
     const appLists = useSelector((state) => state.appLists);
@@ -11,7 +11,7 @@ function Banner() {
 
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(listApps());
+        dispatch(listContents());
     }, [dispatch]);
 
     return (
@@ -67,11 +67,7 @@ function Banner() {
                         </div>
                     </div>
                     <div className="col-md-12 col-lg-6">
-                        <div className="screenImage container-2">
-                            <img className="img1" src="images/image-banner-3.jpg" alt="irene blog" />
-                            <img className="img2" src="images/image-banner-2.jpg" alt="irene blog" />
-                            <img className="img3" src="images/image-banner-1.jpg" alt="irene blog" />
-                        </div>
+                        <ImageBanner />
                     </div>
                 </div>
             </div>

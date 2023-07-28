@@ -1,6 +1,4 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
-// import { HashLink } from 'react-router-hash-link'
 import Menu from '../header/Menu.component'
 
 function Footer() {
@@ -12,13 +10,7 @@ function Footer() {
                         <img src="images/logo-home-black.jpg" alt="Logo" />
                     </div>
                     <div className="footerNav">
-                        <Menu></Menu>
-                        {/* <div>
-                            <p><Link to="/my-cv">My CV</Link></p>
-                            <p><Link to="/blogs">Blogs</Link></p>
-                            <p><HashLink to="/#about">About me</HashLink></p>
-                            <p><HashLink to="/#contact">Contact me</HashLink></p>
-                        </div> */}
+                        <Menu bgColor="black"></Menu>
                     </div>
                     <div className="footerMedias">
                         <div className="footerMedia">
