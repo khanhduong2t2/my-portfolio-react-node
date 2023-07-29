@@ -29,13 +29,6 @@ function Banner() {
                 <div className="row">
                     <div className="col-md-12 col-lg-6">
                         <div className="screenWords">
-                            {/* <h1>Hello, I'm Duong.</h1>
-                            <p>
-                                A full-stack developer. Specializing in building exceptional
-                                trending mobile applications and websites. Feel free to take a
-                                look at my latest projects. Remotely available UTC−1 to UTC+8.
-                                project@irenemmassy.com Tel:+255 065 535 2744
-                            </p> */}
                             {
                                 loading ? (
                                     <div>
@@ -50,7 +43,6 @@ function Banner() {
                                                     <p>{item.content}</p>
                                                 </div>
                                             ))
-                                            // <h1>222</h1>
                                         )
                             }
 

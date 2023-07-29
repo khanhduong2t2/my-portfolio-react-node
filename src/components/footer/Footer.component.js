@@ -1,13 +1,15 @@
 import React from 'react'
 import Menu from '../header/Menu.component'
 
+import LogoHomeBlack from "../../assets/images/logo-home-black.jpg"
+
 function Footer() {
     return (
         <footer>
             <div className="container">
                 <div className="footer footerContainer">
                     <div className="footerLogo">
-                        <img src="images/logo-home-black.jpg" alt="Logo" />
+                        <img src={LogoHomeBlack} alt="Logo" />
                     </div>
                     <div className="footerNav">
                         <Menu bgColor="black"></Menu>

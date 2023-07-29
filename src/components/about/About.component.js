@@ -1,6 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { contentIntro } from '../../Redux/actions/appActions';
 
 function About() {
+    const contentIntroList = useSelector((state) => state.contentIntroList);
+    const { loading, error, results } = contentIntroList;
+
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(contentIntro("about_me"));
+    }, [dispatch]);
     return (
         <section id="about">
             <div className="container">
@@ -9,33 +18,33 @@ function About() {
                         <div className="row">
                             <div className="col-md-6">
                                 <div className="aboutMeImg">
-                                    <img src="images/image-banner-3.jpg" alt="about me" />
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/save-portfolio.appspot.com/o/portfolio%2Favatar_about.jpg?alt=media&token=235faecf-e294-4dac-a818-c358cb6170c5" alt="about me" />
                                 </div>
                             </div>
                             <div className="col-md-6">
                                 <div className="about-me">
-                                    <h5>About me</h5>
-                                    <div className="aboutHorizontalLine"></div>
-                                    <p>
-                                        I enjoy creating things that live on the internet, whether
-                                        that be websites, applications, or anything in between. My
-                                        goal is to always build products that provide pixel-perfect,
-                                        performant experiences.
-                                    </p>
-                                    <p>
-                                        Familiarity with Front End High level programming such as
-                                        HTML, CSS, ReactJS, XML, jQuery and JSON. Server Side coding
-                                        skills Node.js and Php Frameworks( Express.js,Laravel).
-                                    </p>
-                                    <p>
-                                        Understanding of data structures algorithms including data
-                                        migration, transformation and analysis. Deploying, managing,
-                                        and operating scalable, highly available, and fault tolerant
-                                        systems on AWS.
-                                    </p>
-                                    <p>
-                                        Excellent communication skills on both Swahili and English.
-                                    </p>
+                                    {
+                                        loading ? (
+                                            <div>
+                                                <h1>...</h1>
+                                            </div>
+                                        )
+                                            : error ? <h1>!!!</h1>
+                                                : (
+                                                    results.data.data.map((item) => (
+                                                        item.type === "title"
+                                                            ?
+                                                            <div key={item._id}>
+                                                                <h5>{item.content}</h5>
+                                                                <div className="aboutHorizontalLine"></div>
+                                                            </div>
+                                                            : <p key={item._id}>
+                                                                {item.content}
+                                                            </p>
+                                                    ))
+                                                )
+                                    }
+
                                 </div>
                             </div>
                         </div>

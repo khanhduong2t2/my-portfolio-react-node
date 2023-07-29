@@ -2,7 +2,8 @@ import {
     APP_LIST_FAIL, APP_LIST_REQUEST, APP_LIST_SUCCESS,
     LIST_MENU_REQUEST, LIST_MENU_SUCCESS, LIST_MENU_FAIL,
     GET_LIST_APP_REQUEST, GET_LIST_APP_SUCCESS, GET_LIST_APP_FAIL,
-    GET_IMG_BANNER_REQUEST, GET_IMG_BANNER_SUCCESS, GET_IMG_BANNER_FAIL
+    GET_IMG_BANNER_REQUEST, GET_IMG_BANNER_SUCCESS, GET_IMG_BANNER_FAIL,
+    GET_CONTENT_INTRO_REQUEST, GET_CONTENT_INTRO_SUCCESS, GET_CONTENT_INTRO_FAIL,
 }
     from "../constants/appConstants"
 
@@ -16,6 +17,22 @@ export const appsListReducer = (
         case APP_LIST_SUCCESS:
             return { loading: false, apps: action.payload };
         case APP_LIST_FAIL:
+            return { loading: false, error: action.payload };
+        default:
+            return state;
+    }
+};
+
+export const contentIntroReducer = (
+    state = { loading: true, results: [] },
+    action
+) => {
+    switch (action.type) {
+        case GET_CONTENT_INTRO_REQUEST:
+            return { loading: true };
+        case GET_CONTENT_INTRO_SUCCESS:
+            return { loading: false, results: action.payload };
+        case GET_CONTENT_INTRO_FAIL:
             return { loading: false, error: action.payload };
         default:
             return state;

@@ -50,7 +50,7 @@ function Contact() {
                                 <input className="input100" type="text" name="email" required />
                                 <br />
                             </div>
-                            <div className="formWord">
+                            <div className="formWord form-message">
                                 <span>Message</span>
                                 <br />
                                 <textarea name="message" required></textarea>

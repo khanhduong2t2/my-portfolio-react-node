@@ -5,6 +5,7 @@ import {
     LIST_MENU_REQUEST, LIST_MENU_SUCCESS, LIST_MENU_FAIL,
     GET_LIST_APP_REQUEST, GET_LIST_APP_SUCCESS, GET_LIST_APP_FAIL,
     GET_IMG_BANNER_REQUEST, GET_IMG_BANNER_SUCCESS, GET_IMG_BANNER_FAIL,
+    GET_CONTENT_INTRO_REQUEST, GET_CONTENT_INTRO_SUCCESS, GET_CONTENT_INTRO_FAIL,
 } from "../constants/appConstants"
 
 export const listContents = () => async (dispatch) => {
@@ -20,6 +21,24 @@ export const listContents = () => async (dispatch) => {
     } catch (err) {
         dispatch({
             type: APP_LIST_FAIL,
+            payload: err.message,
+        })
+    }
+}
+
+export const contentIntro = (key) => async (dispatch) => {
+    dispatch({
+        type: GET_CONTENT_INTRO_REQUEST
+    });
+    try {
+        const result = await axios.get(`/v1/portfolio/intro/get-content-intro?key=${key}`);
+        dispatch({
+            type: GET_CONTENT_INTRO_SUCCESS,
+            payload: result,
+        })
+    } catch (err) {
+        dispatch({
+            type: GET_CONTENT_INTRO_FAIL,
             payload: err.message,
         })
     }

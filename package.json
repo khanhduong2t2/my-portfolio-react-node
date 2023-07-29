@@ -1,7 +1,7 @@
 {
   "name": "my-portfolio-react-nodejs",
   "version": "0.1.0",
-  "proxy": "http://192.168.1.7:1000",
+  "proxy": "http://192.168.1.8:1000",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",

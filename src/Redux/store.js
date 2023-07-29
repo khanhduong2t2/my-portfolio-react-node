@@ -1,5 +1,5 @@
 import { applyMiddleware, combineReducers, compose, legacy_createStore as createStore } from "redux";
-import { appsListReducer, listMenuReducer, listAppsReducer, imgBannerReducer } from "./reducers/appsReducers";
+import { appsListReducer, listMenuReducer, listAppsReducer, imgBannerReducer, contentIntroReducer } from "./reducers/appsReducers";
 import thunk from "redux-thunk";
 
 const initialState = {};
@@ -7,7 +7,8 @@ const reducer = combineReducers({
     appLists: appsListReducer,
     menuLists: listMenuReducer,
     contentLists: listAppsReducer,
-    imagesBanner: imgBannerReducer
+    imagesBanner: imgBannerReducer,
+    contentIntroList: contentIntroReducer
 });
 
 const composeEnhance = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
