@@ -3,14 +3,14 @@ import About from '../components/about/About.component'
 import Banner from '../components/banner/Banner.component'
 import Header from '../components/header/Header.component'
 import Contact from '../components/contact/Contact.component'
-import HomeScreen from '../components/homescreen/HomeScreen.component'
+import Skill from '../components/skill/Skill.component'
 
 function HomePage() {
     return (
         <>
             <Header bgColor="black"></Header>
             <Banner></Banner>
-            <HomeScreen></HomeScreen>
+            <Skill></Skill>
             <About></About>
             <Contact></Contact>
         </>
