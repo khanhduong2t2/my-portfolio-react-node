@@ -4,6 +4,7 @@ import {
     GET_LIST_APP_REQUEST, GET_LIST_APP_SUCCESS, GET_LIST_APP_FAIL,
     GET_IMG_BANNER_REQUEST, GET_IMG_BANNER_SUCCESS, GET_IMG_BANNER_FAIL,
     GET_CONTENT_INTRO_REQUEST, GET_CONTENT_INTRO_SUCCESS, GET_CONTENT_INTRO_FAIL,
+    GET_DETAIL_APP_REQUEST, GET_DETAIL_APP_SUCCESS, GET_DETAIL_APP_FAIL,
 }
     from "../constants/appConstants"
 
@@ -81,6 +82,22 @@ export const imgBannerReducer = (
         case GET_IMG_BANNER_SUCCESS:
             return { loading: false, results: action.payload };
         case GET_IMG_BANNER_FAIL:
+            return { loading: false, error: action.payload };
+        default:
+            return state;
+    }
+};
+
+export const detailAppReducer = (
+    state = { loading: true, results: null },
+    action
+) => {
+    switch (action.type) {
+        case GET_DETAIL_APP_REQUEST:
+            return { loading: true };
+        case GET_DETAIL_APP_SUCCESS:
+            return { loading: false, results: action.payload };
+        case GET_DETAIL_APP_FAIL:
             return { loading: false, error: action.payload };
         default:
             return state;

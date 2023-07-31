@@ -6,9 +6,10 @@ import {
     GET_LIST_APP_REQUEST, GET_LIST_APP_SUCCESS, GET_LIST_APP_FAIL,
     GET_IMG_BANNER_REQUEST, GET_IMG_BANNER_SUCCESS, GET_IMG_BANNER_FAIL,
     GET_CONTENT_INTRO_REQUEST, GET_CONTENT_INTRO_SUCCESS, GET_CONTENT_INTRO_FAIL,
+    GET_DETAIL_APP_REQUEST, GET_DETAIL_APP_SUCCESS, GET_DETAIL_APP_FAIL,
 } from "../constants/appConstants"
 
-axios.defaults.baseURL = process.env.REACT_APP_API_URL;
+axios.defaults.baseURL = process.env.REACT_APP_ENVIRONMENT === "PRO" ? process.env.REACT_APP_API_URL : process.env.REACT_APP_API_URL_LOCAL;
 
 export const listContents = () => async (dispatch) => {
     dispatch({
@@ -99,6 +100,25 @@ export const imgBanner = (key) => async (dispatch) => {
     } catch (err) {
         dispatch({
             type: GET_IMG_BANNER_FAIL,
+            payload: err.message,
+        })
+    }
+}
+
+export const detailApp = (key) => async (dispatch) => {
+    dispatch({
+        type: GET_DETAIL_APP_REQUEST
+    });
+    try {
+        const result = await axios.get(`/v1/portfolio/app/get-detail-app?key=${key}`);
+
+        dispatch({
+            type: GET_DETAIL_APP_SUCCESS,
+            payload: result,
+        })
+    } catch (err) {
+        dispatch({
+            type: GET_DETAIL_APP_FAIL,
             payload: err.message,
         })
     }
