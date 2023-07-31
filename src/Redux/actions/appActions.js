@@ -8,6 +8,8 @@ import {
     GET_CONTENT_INTRO_REQUEST, GET_CONTENT_INTRO_SUCCESS, GET_CONTENT_INTRO_FAIL,
 } from "../constants/appConstants"
 
+axios.defaults.baseURL = process.env.REACT_APP_API_URL;
+
 export const listContents = () => async (dispatch) => {
     dispatch({
         type: APP_LIST_REQUEST
@@ -32,6 +34,7 @@ export const contentIntro = (key) => async (dispatch) => {
     });
     try {
         const result = await axios.get(`/v1/portfolio/intro/get-content-intro?key=${key}`);
+
         dispatch({
             type: GET_CONTENT_INTRO_SUCCESS,
             payload: result,
@@ -50,6 +53,7 @@ export const listMenu = () => async (dispatch) => {
     });
     try {
         const result = await axios.get("/v1/portfolio/common/get-menu");
+
         dispatch({
             type: LIST_MENU_SUCCESS,
             payload: result,
@@ -68,6 +72,7 @@ export const listApps = () => async (dispatch) => {
     });
     try {
         const result = await axios.get("/v1/portfolio/app/get-list-app");
+
         dispatch({
             type: GET_LIST_APP_SUCCESS,
             payload: result,
@@ -86,6 +91,7 @@ export const imgBanner = (key) => async (dispatch) => {
     });
     try {
         const result = await axios.get(`/v1/portfolio/common/get-url-image?key=${key}`);
+
         dispatch({
             type: GET_IMG_BANNER_SUCCESS,
             payload: result,

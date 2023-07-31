@@ -1,7 +1,6 @@
 {
   "name": "my-portfolio-react-nodejs",
   "version": "0.1.0",
-  "proxy": "https://my-portfolio-backend-ashy.vercel.app",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
