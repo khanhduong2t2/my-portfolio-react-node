@@ -171,7 +171,7 @@ main {
   display: flex;
 }
 .nav2 {
-  width: 40%;
+  width: 52%;
   padding: 0px 77px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -228,6 +228,7 @@ main {
   -o-transition: 0.5s linear;
   transition: 0.5s linear;
 }
+
 /*-------------------------HEADER END----------------------------*/
 
 /* FOOTER */
@@ -1416,4 +1417,334 @@ ol.gradient-list {
 
 .work:hover .layer {
   height: 100%;
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1777px) {
+  /* .screenImage img {
+    width: 80%;
+  } */
+
+  .banner_1 {
+    top: 60px;
+    left: -70px;
+  }
+
+  .banner_2 {
+    top: -33px;
+    left: 314px;
+    transform: rotate(18deg);
+  }
+
+  .banner_3 {
+    top: 21px;
+    left: 125px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+  /* .header-black {
+    background-color: #02a3f3;
+  } */
+
+  .nav2 {
+    width: 72%;
+  }
+
+  .screenImage img {
+    width: 70%;
+  }
+
+  .banner_1 {
+    top: 77px;
+    left: -87px;
+  }
+
+  .banner_3 {
+    top: 41px;
+    left: 84px;
+  }
+
+  .banner_2 {
+    top: -29px;
+    left: 230px;
+  }
+
+  .left-cv {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 46.25em) and (max-width: 992px) {
+  /* .header-black {
+    background-color: #f32f02;
+  } */
+
+  .nav2 {
+    width: 72%;
+  }
+
+  .screenWords {
+    padding-top: 7%;
+  }
+
+  .screenWords h1 {
+    font-size: 37px;
+  }
+
+  .screenWords p {
+    font-size: 17px;
+  }
+
+  .topBackground {
+    height: 537px;
+  }
+
+  .screenImage img {
+    width: 50%;
+  }
+
+  .banner_1 {
+    top: 50px;
+    left: -36px;
+  }
+
+  .banner_3 {
+    top: 23px;
+    left: 121px;
+  }
+
+  .banner_2 {
+    top: -107px;
+    left: 277px;
+    transform: rotate(17deg);
+  }
+
+  .tab {
+    width: 77%;
+  }
+
+  .about-me h5 {
+    margin-top: 15px;
+  }
+
+  form {
+    width: 97%;
+  }
+
+  .footerNav {
+    width: 87%;
+  }
+
+  .footerMedias {
+    width: 55%;
+  }
+
+  .footerContainer span {
+    font-size: 13px;
+    margin-top: 17px;
+  }
+
+  .footerLogo img {
+    width: 140%;
+    height: 77px;
+  }
+
+  .left-cv {
+    width: 39%;
+  }
+}
+
+@media only screen and (max-width: 46.1875em) {
+  /* .header-black {
+    background-color: #02f33a;
+  } */
+
+  .nav1 a img {
+    width: 27%;
+  }
+
+  .screenWords {
+    padding-top: 7%;
+    padding-left: 20px;
+  }
+
+  .screenWords h1 {
+    font-size: 27px;
+  }
+
+  .screenWords p {
+    font-size: 15px;
+    padding-right: 14%;
+  }
+
+  .topBackground {
+    height: 477px;
+  }
+
+  .screenImage img {
+    width: 37%;
+  }
+
+  .nav1 {
+    width: 100%;
+  }
+
+  .nav2 {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .twoMainButton {
+    width: 80%;
+  }
+
+  .menu {
+    width: 30%;
+  }
+
+  .header .menu a {
+    font-size: 13px;
+  }
+
+  .banner_1 {
+    top: 59px;
+    left: 27px;
+    transform: rotate(-15deg);
+  }
+
+  .banner_2 {
+    top: -121px;
+    left: 228px;
+    transform: rotate(19deg);
+  }
+
+  .banner_3 {
+    top: 36px;
+    left: 129px;
+  }
+
+  .tab {
+    width: 92%;
+  }
+
+  .about-me h5 {
+    margin-top: 15px;
+  }
+
+  .about-me p {
+    font-size: 15px;
+  }
+
+  form {
+    width: 97%;
+  }
+
+  .formWord {
+    width: 50%;
+  }
+
+  .formWord input {
+    height: 37px;
+  }
+
+  .formWord textarea {
+    margin-top: 10px;
+    height: 47%;
+  }
+
+  .form-message {
+    margin-top: 37px;
+  }
+
+  form button {
+    width: 147px;
+    height: 50px;
+  }
+
+  .footerNav {
+    width: 87%;
+  }
+
+  .footerMedias {
+    width: 55%;
+  }
+
+  .footerContainer span {
+    font-size: 13px;
+    margin-top: 17px;
+  }
+
+  .footerLogo img {
+    width: 140%;
+    height: 77px;
+  }
+
+  .aboutMeImg {
+    width: 100%;
+  }
+
+  #list-products {
+    margin: 0px auto;
+  }
+
+  .work-list {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .work {
+    margin-bottom: 27px;
+    width: 57%;
+  }
+
+  .layer h2 {
+    font-size: 18px;
+  }
+
+  .layer p {
+    display: none;
+  }
+
+  .layer span {
+    display: none;
+  }
+
+  .blogBox {
+    display: block;
+  }
+
+  .blogBox_pic {
+    width: 100%;
+  }
+
+  .project-card-2 {
+    width: 100%;
+  }
+
+  .project-img-1 {
+    width: 50% !important;
+    left: 83px;
+  }
+
+  .blog_text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .blogcontainer {
+    padding-bottom: 0%;
+  }
+
+  .container-cv {
+    display: block;
+  }
+
+  .left-cv {
+    width: 100%;
+  }
+
+  .right-cv {
+    width: 100%;
+    padding-top: 10px;
+  }
 }
