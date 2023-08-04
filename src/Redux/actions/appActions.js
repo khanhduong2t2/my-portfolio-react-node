@@ -7,6 +7,9 @@ import {
     GET_IMG_BANNER_REQUEST, GET_IMG_BANNER_SUCCESS, GET_IMG_BANNER_FAIL,
     GET_CONTENT_INTRO_REQUEST, GET_CONTENT_INTRO_SUCCESS, GET_CONTENT_INTRO_FAIL,
     GET_DETAIL_APP_REQUEST, GET_DETAIL_APP_SUCCESS, GET_DETAIL_APP_FAIL,
+    GET_LIST_WEB_REQUEST, GET_LIST_WEB_SUCCESS, GET_LIST_WEB_FAIL,
+    GET_DETAIL_WEB_REQUEST, GET_DETAIL_WEB_SUCCESS, GET_DETAIL_WEB_FAIL,
+    GET_LIST_PRODUCT_REQUEST, GET_LIST_PRODUCT_SUCCESS, GET_LIST_PRODUCT_FAIL,
 } from "../constants/appConstants"
 
 axios.defaults.baseURL = process.env.REACT_APP_ENVIRONMENT === "PRO" ? process.env.REACT_APP_API_URL : process.env.REACT_APP_API_URL_LOCAL;
@@ -119,6 +122,63 @@ export const detailApp = (key) => async (dispatch) => {
     } catch (err) {
         dispatch({
             type: GET_DETAIL_APP_FAIL,
+            payload: err.message,
+        })
+    }
+}
+
+export const listWebs = () => async (dispatch) => {
+    dispatch({
+        type: GET_LIST_WEB_REQUEST
+    });
+    try {
+        const result = await axios.get("/v1/portfolio/website/get-list-web");
+
+        dispatch({
+            type: GET_LIST_WEB_SUCCESS,
+            payload: result,
+        })
+    } catch (err) {
+        dispatch({
+            type: GET_LIST_WEB_FAIL,
+            payload: err.message,
+        })
+    }
+}
+
+export const detailWeb = (key) => async (dispatch) => {
+    dispatch({
+        type: GET_DETAIL_WEB_REQUEST
+    });
+    try {
+        const result = await axios.get(`/v1/portfolio/website/get-detail-web?key=${key}`);
+
+        dispatch({
+            type: GET_DETAIL_WEB_SUCCESS,
+            payload: result,
+        })
+    } catch (err) {
+        dispatch({
+            type: GET_DETAIL_WEB_FAIL,
+            payload: err.message,
+        })
+    }
+}
+
+export const listProducts = () => async (dispatch) => {
+    dispatch({
+        type: GET_LIST_PRODUCT_REQUEST
+    });
+    try {
+        const result = await axios.get("/v1/portfolio/common/get-list-products");
+
+        dispatch({
+            type: GET_LIST_PRODUCT_SUCCESS,
+            payload: result,
+        })
+    } catch (err) {
+        dispatch({
+            type: GET_LIST_PRODUCT_FAIL,
             payload: err.message,
         })
     }

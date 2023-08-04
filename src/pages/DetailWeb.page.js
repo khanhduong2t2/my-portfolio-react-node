@@ -1,13 +1,13 @@
 import React from 'react'
+
 import Header from '../components/header/Header.component'
 
-function BlogPage() {
+function DetailWeb() {
     return (
         <>
-            <Header></Header>
-            My CV
+            <Header bgColor="white"></Header>
         </>
     )
 }
 
-export default BlogPage
+export default DetailWeb

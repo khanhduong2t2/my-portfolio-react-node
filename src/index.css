@@ -113,9 +113,36 @@ main {
   background-color: orange;
 }
 
+/* .overlay {
+  text-align: left;
+  padding: 70px 0px;
+} */
+
+.overlay p {
+  font-size: 37px;
+  font-weight: bold;
+  color: #fff;
+  padding-left: 10px;
+}
+
+/* .overlay p::after {
+  content: "";
+  display: block;
+  width: 220px;
+  padding-top: 3px;
+  border-bottom: 4px solid #162a35;
+} */
+
 /*--------------------------HEADER-------------------------------*/
 .container-header {
   min-width: 100%;
+}
+
+.header {
+  width: 100%;
+  /* position: fixed;
+  top: 0;
+  z-index: 9; */
 }
 
 .header-white {
@@ -482,7 +509,7 @@ a.nav-item.nav-link.active {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  margin-top: -10px;
+  /* margin-top: 113px; */
 }
 .topBackground {
   width: 100%;
@@ -736,7 +763,7 @@ form button:hover {
 
 /*--------------------------LIST APP------------------------------------ */
 .blogcontainer {
-  padding-top: 6%;
+  padding-top: 3%;
   padding-bottom: 6%;
 }
 .blogBox {
@@ -839,7 +866,7 @@ form button:hover {
 }
 
 .blog_text div > a:hover {
-  color: #06e240 !important;
+  /* color: #06e240 !important; */
   transform: translateY(-2px) !important;
   text-decoration: underline;
 }
@@ -909,7 +936,6 @@ form button:hover {
 }
 
 .project-card-2 {
-  /* background: linear-gradient(225deg, #2c2940, #5a4073); */
   background: linear-gradient(225deg, #15b500, #6de55d);
 }
 
@@ -966,20 +992,20 @@ form button:hover {
 }
 
 .project-img-2 {
-  width: 20vw;
-  height: 27vh;
+  width: 19vw !important;
+  height: 22vh !important;
   object-fit: cover;
   object-position: top;
-  top: 100px;
-  left: 150px;
+  top: 84px;
+  left: 130px;
   transform: scale(1.5);
   border-radius: 10px;
-  box-shadow: -10px 10px 10px #00000080;
+  box-shadow: -5px -5px 10px #00000040;
   transition: 0.5s ease;
 }
 
 .project-card:hover .project-img-2 {
-  box-shadow: -20px 20px 20px #00000080;
+  box-shadow: -20px -20px 20px #eae7e740;
 }
 
 .project-img-3 {
@@ -993,6 +1019,43 @@ form button:hover {
 
 .project-card:hover .project-img-3 {
   box-shadow: -20px -20px 20px #00000040;
+}
+
+.btn-visit-website {
+  border: none;
+  border-radius: 20px;
+  /* background-color: #ff3b00; */
+}
+
+.webcontainer {
+  padding-top: 3%;
+  padding-bottom: 6%;
+}
+
+.container-app {
+  position: relative;
+  height: 200px;
+  display: flex;
+  padding: 0px auto !important;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://i.etsystatic.com/39090841/r/il/e0f40a/4402896466/il_570xN.4402896466_bpoj.jpg");
+}
+
+.container-app::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    22,
+    42,
+    53,
+    0.7
+  ); /* Màu nền mờ, ở đây là màu đen với độ mờ 0.5 */
+  z-index: 1; /* Đảm bảo lớp phủ mờ nằm trên nền hình ảnh */
 }
 
 /* -------------------------------END LIST APP----------------------------------- */
@@ -1090,6 +1153,118 @@ form button:hover {
 }
 /* -------------------------------END DETAIL APP----------------------------------- */
 
+/* -----------------------------------My CV---------------------------------------- */
+
+/* -------------------------------  END MY CV----------------------------------------- */
+.container-cv {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px;
+  /* background-color: #6d6d7e; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  /* margin-top: 113px; */
+  background-image: url("https://i.etsystatic.com/40485572/r/il/b4c1fa/4596986979/il_fullxfull.4596986979_oowp.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.left-cv {
+  width: 20%;
+  background-color: #37474f;
+}
+
+.left-cv .left-top-cv {
+  width: 100%;
+  padding: 30px 20px 20px;
+  background-color: #263238;
+}
+
+.left-cv .left-top-cv img {
+  width: 80%;
+  height: 285px;
+  border-radius: 50%;
+}
+
+.left-cv .left-top-cv h3 {
+  color: #fff;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+.left-cv .left-top-cv p {
+  color: #fff;
+}
+
+.left-cv .left-bottom-cv {
+  width: 100%;
+  color: #fff;
+  font-size: 15px;
+  text-align: left;
+  padding: 30px 17px;
+  background-color: #37474f;
+}
+
+.left-cv .left-bottom-cv p {
+  line-height: 37px;
+}
+
+.left-cv .left-bottom-cv i {
+  font-weight: 600;
+  margin-right: 10px;
+  width: 28px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #7c7a79;
+  padding: 6px;
+}
+
+.left-cv .left-bottom-cv h5 {
+  font-weight: 600;
+  line-height: 70px;
+}
+
+.right-cv {
+  width: 40%;
+  text-align: left;
+  padding: 0px 30px;
+  background-color: #fff;
+}
+
+/* .right-cv p {
+  line-height: 30px;
+} */
+
+.right-cv .title-parent {
+  font-size: 21px;
+  margin-top: 35px;
+  font-weight: 600;
+}
+
+.right-cv .title-parent i {
+  color: #fff;
+  width: 48px;
+  height: 46px;
+  padding: 12px;
+  border-radius: 26px;
+  text-align: center;
+  margin-right: 12px;
+  background-color: #162a35;
+}
+
+.right-cv .body-children {
+  font-size: 15px;
+}
+
+.right-cv .title-children {
+  font-weight: 600;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+/* ---------------Common---------------- */
 ol.gradient-list {
   counter-reset: gradient-counter;
   list-style: none;
@@ -1149,4 +1324,96 @@ ol.gradient-list {
       margin-top: 2rem;
     }
   }
+}
+
+/* ---------------End Common---------------- */
+
+#list-products {
+  margin: 100px auto;
+  padding: 50px 0;
+}
+
+.d-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.work-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  width: 24%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer {
+  width: 100%;
+  height: 0;
+  color: #fff;
+  background: #162a35;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 16px;
+  transition: height 0.5s;
+}
+
+.layer h2 {
+  margin-bottom: 30px;
+}
+
+.layer p {
+  display: inline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+  height: 99px;
+}
+
+.layer a {
+  margin-top: 30px;
+  color: #080808;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.layer a:hover {
+  color: #080808;
+}
+
+.work:hover img {
+  transform: scale(1.1);
+}
+
+.work:hover .layer {
+  height: 100%;
 }

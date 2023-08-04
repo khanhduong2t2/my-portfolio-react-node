@@ -5,6 +5,9 @@ import {
     GET_IMG_BANNER_REQUEST, GET_IMG_BANNER_SUCCESS, GET_IMG_BANNER_FAIL,
     GET_CONTENT_INTRO_REQUEST, GET_CONTENT_INTRO_SUCCESS, GET_CONTENT_INTRO_FAIL,
     GET_DETAIL_APP_REQUEST, GET_DETAIL_APP_SUCCESS, GET_DETAIL_APP_FAIL,
+    GET_LIST_WEB_REQUEST, GET_LIST_WEB_SUCCESS, GET_LIST_WEB_FAIL,
+    GET_DETAIL_WEB_REQUEST, GET_DETAIL_WEB_SUCCESS, GET_DETAIL_WEB_FAIL,
+    GET_LIST_PRODUCT_REQUEST, GET_LIST_PRODUCT_SUCCESS, GET_LIST_PRODUCT_FAIL,
 }
     from "../constants/appConstants"
 
@@ -98,6 +101,54 @@ export const detailAppReducer = (
         case GET_DETAIL_APP_SUCCESS:
             return { loading: false, results: action.payload };
         case GET_DETAIL_APP_FAIL:
+            return { loading: false, error: action.payload };
+        default:
+            return state;
+    }
+};
+
+export const listWebsReducer = (
+    state = { loading: true, results: null },
+    action
+) => {
+    switch (action.type) {
+        case GET_LIST_WEB_REQUEST:
+            return { loading: true };
+        case GET_LIST_WEB_SUCCESS:
+            return { loading: false, results: action.payload };
+        case GET_LIST_WEB_FAIL:
+            return { loading: false, error: action.payload };
+        default:
+            return state;
+    }
+};
+
+export const detailWebReducer = (
+    state = { loading: true, results: null },
+    action
+) => {
+    switch (action.type) {
+        case GET_DETAIL_WEB_REQUEST:
+            return { loading: true };
+        case GET_DETAIL_WEB_SUCCESS:
+            return { loading: false, results: action.payload };
+        case GET_DETAIL_WEB_FAIL:
+            return { loading: false, error: action.payload };
+        default:
+            return state;
+    }
+};
+
+export const listProductsReducer = (
+    state = { loading: true, results: null },
+    action
+) => {
+    switch (action.type) {
+        case GET_LIST_PRODUCT_REQUEST:
+            return { loading: true };
+        case GET_LIST_PRODUCT_SUCCESS:
+            return { loading: false, results: action.payload };
+        case GET_LIST_PRODUCT_FAIL:
             return { loading: false, error: action.payload };
         default:
             return state;

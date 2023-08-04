@@ -16,14 +16,14 @@ function AppPage() {
     }, [dispatch]);
     return (
         <>
-            <Header bgColor="white"></Header>
-            {/* <div className="banner">
+            <Header bgColor="black"></Header>
+            <div className="banner">
                 <div className="overlay">
-                    <div className="container">
-                        <h1>My Recent Mobile Apps</h1>
+                    <div className="container-app">
+                        <p style={{ "zIndex": "4" }}>Mobile Apps</p>
                     </div>
                 </div>
-            </div> */}
+            </div>
 
             <div className="container blogcontainer">
                 <div className="row">
@@ -57,7 +57,7 @@ function AppPage() {
                                         <div className="blog_text">
                                             <div key={item._id}>
                                                 <h3>
-                                                    <a href={`#${item.name}`}>{item.name}</a>
+                                                    <a href={`/app/${item.key}`}>{item.name}</a>
                                                 </h3>
                                                 <p>
                                                     {item.content}

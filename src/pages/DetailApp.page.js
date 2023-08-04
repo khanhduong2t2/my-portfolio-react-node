@@ -21,7 +21,7 @@ function DetailApp() {
 
     return (
         <>
-            <Header bgColor="white"></Header>
+            <Header bgColor="black"></Header>
             {
                 loading ? (
                     <div>

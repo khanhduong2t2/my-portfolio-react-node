@@ -6,9 +6,10 @@ import HomePage from './pages/Home.page';
 import Footer from './components/footer/Footer.component';
 import AppPage from './pages/App.page';
 import DetailAppPage from './pages/DetailApp.page';
+// import DetailWebPage from './pages/DetailWeb.page';
 import WebsitePage from './pages/Website.page';
 import MyCVPage from './pages/MyCV.page';
-import BlogPage from './pages/Blog.page';
+import ProductPage from './pages/Product.page';
 
 function App() {
   return (
@@ -22,8 +23,9 @@ function App() {
             <Route path="/app/:key" element={<DetailAppPage />}></Route>
 
             <Route path="/website" element={<WebsitePage />}></Route>
+            {/* <Route path="/website/:key" element={<DetailWebPage />}></Route> */}
             <Route path="/my-cv" element={<MyCVPage />}></Route>
-            <Route path="/blogs" element={<BlogPage />}></Route>
+            <Route path="/my-products" element={<ProductPage />}></Route>
           </Routes>
         </main>
         <Footer></Footer>

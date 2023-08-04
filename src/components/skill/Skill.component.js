@@ -79,10 +79,9 @@ function Skill() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-4 col-md-4 col-sm-6">
+                                    {/* <div className="col-lg-4 col-md-4 col-sm-6">
                                         <div className="sectionBox">
                                             <div className="sectionImage">
-                                                {/* <i className="fa-regular fa-cloud" style={{ fontSize: "40px" }}></i> */}
                                                 <img alt="abc" src="https://firebasestorage.googleapis.com/v0/b/save-portfolio.appspot.com/o/portfolio%2Fcloud.png?alt=media&token=72b31cce-82e9-4290-b698-2024954a5166"></img>
                                             </div>
                                             <div className="sectionWords">
@@ -93,7 +92,7 @@ function Skill() {
                                                 </ul>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <div className="col-lg-4 col-md-4 col-sm-6">
                                         <div className="sectionBox">
                                             <div className="sectionImage">
@@ -121,7 +120,7 @@ function Skill() {
                                 <div className="row">
                                     <ul className="list-experience">
                                         <li style={{ marginTop: '20px' }}><span>4/2020 - 6/2020</span><br />Intern At WATA Solutions Company</li>
-                                        <li style={{ marginTop: '20px' }}><span>7/2022 - 8/2023</span><br />Web Developer At Wolf Solutions Company</li>
+                                        <li style={{ marginTop: '20px' }}><span>7/2022 - 8/2023</span><br />Backend Developer At Wolf Solutions Company</li>
                                     </ul>
                                 </div>
                             </div>
