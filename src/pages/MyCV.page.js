@@ -40,7 +40,20 @@ function MyCVPage() {
                             https://github.com/KhanhDuong187it14054
                         </p>
                         <h5>CAREER GOALS</h5>
-                        <span>- Practice and apply current knowledge, as well as acquire new technology, to prepare for future careers.</span>
+                        <span>
+                            - Expand my knowledge, enhance
+                            programming skills, and develop
+                            websites and applications by
+                            participating in real projects within a
+                            professional process.
+                        </span>
+                        <br />
+                        <span>
+                            - Desire to learn the latest
+                            technologies in the Information
+                            Technology industry such as artificial
+                            intelligence, machine learning,...
+                        </span>
                     </div>
                 </div>
                 <div className="right-cv">
@@ -140,24 +153,48 @@ function MyCVPage() {
                             </p>
                             <br />
                             <p>
-                                - Calibee is an application that provides cleaning/repair services for homes and offices. Help connect a team of skilled partners with customers at the fastest time.
-                            </p>
-                            <br />
-                            <p>
-                                - Role: Backend developer.
+                                - Role: Join from the beginning of the project as a back-end developer.
+                                Write APIs, maintain and develop features for the app.
                             </p>
                             <p>
                                 - Technology used: NodeJS - ExpressJS, SQL
                             </p>
                             <br />
-                            <p>- For customer
+                            <p>
+                                - Calibee is an application that provides cleaning/repair services for homes and
+                                offices. Help connect a team of skilled partners with customers at the fastest time.
+                            </p>
+                            <p>
+                                - Currently, Calibee has nearly 2000 customers with many good feedbacks
+                            </p>
+                            <br />
+                            <p>- Some key features:
+                                <br />
+                                + Customers can book many services such as cleaning, repair, cooking, babysitting,...
+                                <br />
+                                + Calibee will automatically notify when a partner received the booking
+                                <br />
+                                + Provide the status of the booking such as: received, canceled, started, in progress, and
+                                finished for customers.
+                            </p>
+                            <br />
+                            <p>
+                                + Partners are provided with real-time bookings.
+                                <br />
+                                + The booking list will be selected based on the registered location and working time
+                                suitable for partners.
+                                <br />
+                                + Automatically remind partners to do work.
+                            </p>
+                            <br />
+                            <p>- Link app for customer
                                 <br />
                                 + App Store:  https://apps.apple.com/vn/app/calibee/id6443800125
                                 <br />
                                 + Google Play:  https://play.google.com/store/apps/details?id=com.wolfsolusions.calibee.customer.prod&amp;pli=1
                             </p>
                             <br />
-                            <p>- For partner</p>
+                            <p>- Link app for partner</p>
                             <p>
                                 + App Store:  https://apps.apple.com/vn/app/calibee-partner/id6443801768?l=vi
                             </p>
@@ -170,42 +207,32 @@ function MyCVPage() {
                     <div>
                         <p className="title-parent">
                             <i className="fa-regular fa-bookmark"></i>
-                            EXPERIENCE
+                            PERSONAL PROJECTS
                         </p>
                         <div className="body-children">
                             <p className="title-children">
-                                <span>CALIBEE APP - CLEANING & REPAIR</span>
-                                <span>(7/2022 - 8/2023)</span>
+                                <span>WEBSITE MY PORTFOLIO</span>
                             </p>
                             <p>
-                                <strong>Wolf Solutions Company</strong>
+                                Built a website to introduce myself and to practice with ReactJS.
                             </p>
                             <br />
                             <p>
-                                - Calibee is an application that provides cleaning/repair services for homes and offices. Help connect a team of skilled partners with customers at the fastest time.
-                            </p>
-                            <br />
-                            <p>
-                                - Role: Backend developer.
+                                - Link GitHub: https://github.com/khanhduong2t2/my-portfolio-react-node
                             </p>
                             <p>
-                                - Technology used: NodeJS - ExpressJS, SQL
+                                - Link website: https://my-portfolio-react-node.vercel.app
                             </p>
                             <br />
-                            <p>- For customer
+                            <p>- Technology used:
                                 <br />
-                                + App Store:  https://apps.apple.com/vn/app/calibee/id6443800125
+                                + Front-end: ReactJS - Redux
                                 <br />
-                                + Google Play:  https://play.google.com/store/apps/details?id=com.wolfsolusions.calibee.customer.prod&amp;pli=1
+                                + Back-end: Node.JS - Express.JS
+                                <br />
+                                + Database: MongoDB.
                             </p>
                             <br />
-                            <p>- For partner</p>
-                            <p>
-                                + App Store:  https://apps.apple.com/vn/app/calibee-partner/id6443801768?l=vi
-                            </p>
-                            <p>
-                                + Google Play:  https://play.google.com/store/apps/details?id=com.wolfsolusions.calibee.worker.prod
-                            </p>
                         </div>
                     </div>
                 </div>
